@@ -21,15 +21,15 @@
             <nav class="menu">
                 <a href="./index.html" lang="en" class="logo"><span class="logo-slogan">Web</span>Studio</a>
                 <ul class="list-no-stule site-nav">
-                    <li class="item"><a href="./index.html" class="menu-nav color-atelier">Студия</a></li>
-                    <li class="item"><a href="./portfolio.html" class="menu-nav">Портфолио</a></li>
+                    <li class="item"><a href="./index.html" class="menu-nav color-atelier underscore">Студия</a></li>
+                    <li class="item"><a href="./portfolio.html" class="menu-nav ">Портфолио</a></li>
                     <li class="item"><a href="#" class="menu-nav">Контакты</a></li>
                 </ul>
             </nav>
             <ul class="list-no-stule  auth-nav">
                 <li class="item">
                     <a href="mailto:info@devstudio.com" class="address mail">
-                        <svg class="" width="16" height="12">
+                        <svg class="" width="16" height="12">   
                             <use href="./img/icon/sprait-icon.svg#envelope"></use>  
                         </svg>
                         info@devstudio.com
@@ -54,12 +54,19 @@
             <div class="container">
                 <div class="text-button">
                     <h1 class="hero-text">ЭФФЕКТИВНЫЕ РЕШЕНИЯ ДЛЯ ВАШЕГО БИЗНЕСА</h1>
-                    <button type="button" class="button-promo">Заказать услугу</button>
-                </div>
-                <div class="backdrop">
-                    <div class="modal"></div>
+                    <button type="button" class="button-promo" data-modal-open>Заказать услугу</button>
                 </div>
             </div>
+            <!-- МОДАЛЬНОЕ ОКНО -->
+            <div class="backdrop is-hidden" data-modal>
+                <div class="modal">
+                    <button type="button" class="button-modal" data-modal-close>
+                        <svg class="close" width="11" height="11" fill="#000000">
+                            <use href="./img/icon/close.svg"></use>
+                        </svg>
+                    </button>
+                </div>
+            </div> 
         </section>
         <!-- наше преимущество -->
         <section class="advantage">
@@ -397,6 +404,10 @@
         </div> 
     </footer>
     <!-- /подвал сайта -->
+
+    <!-- подключение мадалки -->
+    <script src="./js/modal.js"></script>
+    <!-- подключение мадалки -->
 </body>
 </html>
 
