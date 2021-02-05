@@ -509,7 +509,6 @@ a {
   font-weight: bold;
   font-size: 14px;
   line-height: 1.14;
-  text-align: center;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #ffffff;
@@ -521,17 +520,14 @@ a {
 
 .inscription {
   position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   bottom: 0;
   width: 100%;
   height: 70px;
-  padding-top: 24px;
   background: rgba(47, 48, 58, 0.8);
-  /* opacity: 0; */
 }
-
-/* .photo:hover .inscription {
-  opacity: 1;
-} */
 
 /* ================== / ЧЕМ МЫ ЗАНИМАЕМСЯ / =========================== */
 
@@ -924,6 +920,11 @@ footer .container {
 }
 
 .product:hover .pop-up {
+  transform: translateY(0);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.cards a:focus .pop-up {
   transform: translateY(0);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
